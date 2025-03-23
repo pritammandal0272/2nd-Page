@@ -39,6 +39,10 @@
         #shadow{
             box-shadow: 2px 2px 3px;
         }
+        #login_popup{
+            background-color: red;
+            z-index: 1;
+        }
         /* Tablets */
         @media (min-width: 768px) and (max-width: 1024px) {
             *{
@@ -76,6 +80,9 @@
         <div class="h-fit w-full pb-[13vh]">  <!--Main_Div Start-->
             <!-- Top Navbar Here -->
             <div class="h-[32vh] w-full bg-white flex flex-col justify-between fixed top-0 p-2 px-5" id="navbar">
+<!--Light-->    <div class="border-2 border-green-400 absolute rounded-2xl left-[63%] top-[10%] p-1 text-[10px] cursor-pointer">
+                    <button id="mode" class="text-red-500">Dark</button>
+                </div>
                 <div class="h-[8vh] w-full flex justify-between items-center py-2">
                     <div class="h-[6vh] w-[70px] rounded-[10px] bg-[url(images/logo.png)] bg-no-repeat bg-cover" id="logo"><!--LOGO--></div>
                     <div class="flex flex-col w-[50%] md:w-[85%]" id="navbar_info">
@@ -83,9 +90,9 @@
                         <h2 class="font-bold">How can i help you!</h2>
                     </div>
                     
-                    <div class="h-full w-10 bg-[#00000015] rounded-[10px] text-2xl flex items-center justify-center" id="logo"> <i class="fa-solid fa-bell"></i><!--icon--></div>
-<!--Login_Popup-->  <div class="h-full w-10 bg-[#00000015] rounded-[10px] text-2xl flex items-center justify-center cursor-pointer " id="login"> <i class="fa-solid fa-right-to-bracket text-green-400"></i></i>
-                        <div class="absolute h-[350px] w-[80%] bg-[rgba(0,0,0,0.6)] top-[50%] right-[10%] rounded-2xl flex items-center justify-center flex-col" id="login_popup">
+                    <div class="h-full w-10 bg-[#000000] rounded-[10px] text-2xl flex items-center justify-center border-2 border-green-400" id="logo"> <i class="fa-solid fa-bell text-green-400"></i><!--icon--></div>
+<!--Login_Popup-->  <div class="h-full w-10 bg-[#000000] rounded-[10px] text-2xl flex items-center justify-center cursor-pointer border-2 border-green-400" id="login"> <i class="fa-solid fa-right-to-bracket text-green-400"></i></i>
+                        <div class="absolute h-[350px] w-[80%] top-[50%] right-[10%] rounded-2xl flex items-center justify-center flex-col" id="login_popup">
                             <div class="w-[80%] bg-white p-1 rounded-2xl text-[#ff7200] flex items-center justify-center">
                                 <p id="here">Login Here</p>
                             </div>
@@ -102,27 +109,27 @@
                     </div>
                 </div>
 <!--Search Box--><div class="h-[7vh] w-full flex justify-between items-center">
-                        <div class="w-[87%] h-[5vh] bg-[#00000015] flex items-center justify-between py-2 pl-4 rounded-[10px]">   
+                        <div class="border-2 border-blue-500 w-[87%] h-[5vh] bg-[#00000015] flex items-center justify-between py-2 pl-4 rounded-[10px]">   
                             <i class="fa-solid fa-magnifying-glass text-[15px]"></i>
                             <input type="text" placeholder="Search" class="w-[93%] text-[18px] xl:w-[97%] focus:outline-0 bg-transparent">
                         </div>
-                        <div class="h-[5vh] w-[10%] bg-[#00000015] rounded-[10px] flex items-center justify-center text-[15px]"><i class="fa-solid fa-filter"></i></div>
+                        <div class="border-2 border-blue-500 h-[5vh] w-[10%] bg-[#00000015] rounded-[10px] flex items-center justify-center text-[15px]"><i class="fa-solid fa-filter"></i></div>
                 </div>
                 <div class="h-[6vh] w-full flex items-center justify-between">
                     <h2 class="text-[22px] font-bold">Categories</h2>
                     <h2>See All</h2>
                 </div>
  <!--ScrollBar-->   <div class="h-[5vh] w-full flex justify-between gap-4" id="scroll">
-                    <div class="w-fit h-full bg-orange-500 rounded-[10px] flex items-center justify-center px-7 cursor-pointer">All</div>
-                    <div class="w-fit h-full bg-[#00000010] rounded-[10px] flex items-center justify-center px-7 cursor-pointer hover:bg-green-400 hover:text-white transition-all duration-400">Men</div>
-                    <div class="w-fit h-full bg-[#00000010] rounded-[10px] flex items-center justify-center px-7 cursor-pointer hover:bg-green-400 hover:text-white transition-all duration-400">Women</div>
-                    <div class="w-fit h-full bg-[#00000010] rounded-[10px] flex items-center justify-center px-7 cursor-pointer hover:bg-green-400 hover:text-white transition-all duration-400">Girs</div>
-                    <div class="w-fit h-full bg-[#00000010] rounded-[10px] flex items-center justify-center px-7 cursor-pointer hover:bg-green-400 hover:text-white transition-all duration-400">Boys</div>
-                    <div class="w-fit h-full bg-[#00000010] rounded-[10px] flex items-center justify-center px-7 cursor-pointer hover:bg-green-400 hover:text-white transition-all duration-400">New</div>
-                    <div class="w-fit h-full bg-[#00000010] rounded-[10px] flex items-center justify-center px-7 cursor-pointer hover:bg-green-400 hover:text-white transition-all duration-400">Trands</div>
-                    <div class="w-fit h-full bg-[#00000010] rounded-[10px] flex items-center justify-center px-7 cursor-pointer hover:bg-green-400 hover:text-white transition-all duration-400">Grocery</div>
-                    <div class="w-fit h-full bg-[#00000010] rounded-[10px] flex items-center justify-center px-7 cursor-pointer hover:bg-green-400 hover:text-white transition-all duration-400">Electronice</div>
-                    <div class="w-fit h-full bg-[#00000010] rounded-[10px] flex items-center justify-center px-7 cursor-pointer hover:bg-green-400 hover:text-white transition-all duration-400">Sharts</div>
+                    <div class="border-2 border-blue-500 w-fit h-full bg-orange-500 rounded-[10px] flex items-center justify-center px-7 cursor-pointer">All</div>
+                    <div class="border-2 border-blue-500 w-fit h-full bg-[#00000010] rounded-[10px] flex items-center justify-center px-7 cursor-pointer hover:bg-green-400 hover:text-white transition-all duration-400">Men</div>
+                    <div class="border-2 border-blue-500 w-fit h-full bg-[#00000010] rounded-[10px] flex items-center justify-center px-7 cursor-pointer hover:bg-green-400 hover:text-white transition-all duration-400">Women</div>
+                    <div class="border-2 border-blue-500 w-fit h-full bg-[#00000010] rounded-[10px] flex items-center justify-center px-7 cursor-pointer hover:bg-green-400 hover:text-white transition-all duration-400">Girs</div>
+                    <div class="border-2 border-blue-500 w-fit h-full bg-[#00000010] rounded-[10px] flex items-center justify-center px-7 cursor-pointer hover:bg-green-400 hover:text-white transition-all duration-400">Boys</div>
+                    <div class="border-2 border-blue-500 w-fit h-full bg-[#00000010] rounded-[10px] flex items-center justify-center px-7 cursor-pointer hover:bg-green-400 hover:text-white transition-all duration-400">New</div>
+                    <div class="border-2 border-blue-500 w-fit h-full bg-[#00000010] rounded-[10px] flex items-center justify-center px-7 cursor-pointer hover:bg-green-400 hover:text-white transition-all duration-400">Trands</div>
+                    <div class="border-2 border-blue-500 w-fit h-full bg-[#00000010] rounded-[10px] flex items-center justify-center px-7 cursor-pointer hover:bg-green-400 hover:text-white transition-all duration-400">Grocery</div>
+                    <div class="border-2 border-blue-500 w-fit h-full bg-[#00000010] rounded-[10px] flex items-center justify-center px-7 cursor-pointer hover:bg-green-400 hover:text-white transition-all duration-400">Electronice</div>
+                    <div class="border-2 border-blue-500 w-fit h-full bg-[#00000010] rounded-[10px] flex items-center justify-center px-7 cursor-pointer hover:bg-green-400 hover:text-white transition-all duration-400">Sharts</div>
                 </div>
                 <marquee direction="right" ><span id="scroll" class="inline-block mt-4 font-bold">WelCome <span id="marque"></span> to my Webpage</span></marquee>
             </div><!--Navbar End-->
@@ -489,7 +496,7 @@
                 <i class="fa-solid fa-bag-shopping"></i>
                 <h1 class="text-[17px]">Shoping</h1>
                 <!--PopUp_Box--><div id="shoping_popup" class="absolute h-[500px] w-[100%] bottom-[150%] left-[2%] flex items-center justify-center">
-                    <div class="w-[80%] h-[80%] bg-red-200 rounded-2xl flex items-center justify-center text-4xl">
+                    <div class="w-[80%] h-[80%] bg-red-500 rounded-2xl flex items-center justify-center text-4xl">
                         <h1 class="text-green-600" id="shop"></h1>
                     </div>
                 </div>
