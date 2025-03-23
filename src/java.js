@@ -1,0 +1,9 @@
+let a = prompt("Enter your Name");
+let pritam = document.querySelector("#name");
+let marque = document.querySelector("#marque");
+let shop = document.querySelector("#shop");
+marque.style.color = "blue";
+marque.innerHTML = a;
+pritam.style.color="red";
+pritam.innerHTML = a;
+shop.innerHTML = "Pagla " + a + "😂";
